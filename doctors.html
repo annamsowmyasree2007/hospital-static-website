@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; frame-src https://www.google.com https://maps.google.com; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com https://www.google.com https://maps.googleapis.com https://maps.gstatic.com"
+    />
+    <meta name="description" content="Meet the expert medical specialists at QuickCare Hospital." />
+    <title>Doctors | QuickCare Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="QuickCare Hospital home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 10c-12.15 0-22 9.85-22 22s9.85 22 22 22 22-9.85 22-22S44.15 10 32 10Zm-7.2 17.1h5.7v-5.6h8.9v5.6h5.7v8.9h-5.7v5.6h-8.9v-5.6h-5.7v-8.9Z" fill="currentColor"/>
+              <path d="M18 42.8c2.8-4.2 6.2-6.7 11.3-6.7 4.7 0 7.7 2.1 11.3 6.3" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <div>
+            <strong>QuickCare</strong>
+            <small>Your Health, Our Priority</small>
+          </div>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="contact.html" class="btn btn-primary nav-cta">Book Appointment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container banner-content">
+          <span class="eyebrow">Meet Our Specialists</span>
+          <h1>Experienced doctors dedicated to your health and recovery.</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container card-grid doctor-grid large-grid">
+          <article class="doctor-card profile-card">
+            <div class="doctor-photo-wrap">
+              <img src="images/doctor1.jpg" alt="Dr. Aisha Mehta, Senior Cardiologist" />
+            </div>
+            <div class="doctor-content">
+              <span class="doctor-badge">Cardiology</span>
+              <h3>Dr. Aisha Mehta</h3>
+              <p class="qualification"><span>Qualification:</span> MBBS, MD (Cardiology)</p>
+              <p class="specialization"><span>Specialization:</span> Senior Cardiologist</p>
+              <p class="experience"><span>Experience:</span> 18+ years</p>
+              <p>Dr. Mehta specializes in preventive cardiology, heart rhythm disorders, and advanced cardiac recovery plans.</p>
+              <a href="contact.html" class="btn btn-small btn-primary">Book Appointment</a>
+            </div>
+          </article>
+
+          <article class="doctor-card profile-card">
+            <div class="doctor-photo-wrap">
+              <img src="images/doctor2.jpg" alt="Dr. Rohan Verma, Consultant Neurologist" />
+            </div>
+            <div class="doctor-content">
+              <span class="doctor-badge">Neurology</span>
+              <h3>Dr. Rohan Verma</h3>
+              <p class="qualification"><span>Qualification:</span> MBBS, DM (Neurology)</p>
+              <p class="specialization"><span>Specialization:</span> Consultant Neurologist</p>
+              <p class="experience"><span>Experience:</span> 16+ years</p>
+              <p>Dr. Verma treats complex neurological disorders with evidence-based care and personalized recovery planning.</p>
+              <a href="contact.html" class="btn btn-small btn-primary">Book Appointment</a>
+            </div>
+          </article>
+
+          <article class="doctor-card profile-card">
+            <div class="doctor-photo-wrap">
+              <img src="images/doctor3.jpg" alt="Dr. Sneha Kapoor, Pediatrician" />
+            </div>
+            <div class="doctor-content">
+              <span class="doctor-badge">Pediatrics</span>
+              <h3>Dr. Sneha Kapoor</h3>
+              <p class="qualification"><span>Qualification:</span> MBBS, MD (Pediatrics)</p>
+              <p class="specialization"><span>Specialization:</span> Pediatric Specialist</p>
+              <p class="experience"><span>Experience:</span> 14+ years</p>
+              <p>Dr. Kapoor focuses on child wellness, immunization guidance, and compassionate family-centered pediatric care.</p>
+              <a href="contact.html" class="btn btn-small btn-primary">Book Appointment</a>
+            </div>
+          </article>
+
+          <article class="doctor-card profile-card">
+            <div class="doctor-photo-wrap">
+              <img src="images/doctor4.jpg" alt="Dr. Gayathri, Orthopedic Surgeon" />
+            </div>
+            <div class="doctor-content">
+              <span class="doctor-badge">Orthopedics</span>
+              <h3>Dr. Gayathri</h3>
+              <p class="qualification"><span>Qualification:</span> MBBS, MS (Orthopedics)</p>
+              <p class="specialization"><span>Specialization:</span> Orthopedic Surgeon</p>
+              <p class="experience"><span>Experience:</span> 15+ years</p>
+              <p>Dr. Gayathri offers advanced joint and bone treatment, rehabilitation planning, and minimally invasive orthopedic care.</p>
+              <a href="contact.html" class="btn btn-small btn-primary">Book Appointment</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 10c-12.15 0-22 9.85-22 22s9.85 22 22 22 22-9.85 22-22S44.15 10 32 10Zm-7.2 17.1h5.7v-5.6h8.9v5.6h5.7v8.9h-5.7v5.6h-8.9v-5.6h-5.7v-8.9Z" fill="currentColor"/>
+                <path d="M18 42.8c2.8-4.2 6.2-6.7 11.3-6.7 4.7 0 7.7 2.1 11.3 6.3" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div>
+              <strong>QuickCare</strong>
+              <small>Your Health, Our Priority</small>
+            </div>
+          </a>
+          <p>We believe in delivering world-class care with clarity, comfort, and respect for every patient.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>24 Green Avenue, New City</li>
+            <li>+91 98765 43210</li>
+            <li>hello@quickcarehospital.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> QuickCare Hospital. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; frame-src https://www.google.com https://maps.google.com; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com https://www.google.com https://maps.googleapis.com https://maps.gstatic.com"
+    />
+    <meta
+      name="description"
+      content="A modern hospital website for compassionate and advanced healthcare services."
+    />
+    <title>QuickCare Hospital | Compassionate Healthcare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="QuickCare Hospital home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 10c-12.15 0-22 9.85-22 22s9.85 22 22 22 22-9.85 22-22S44.15 10 32 10Zm-7.2 17.1h5.7v-5.6h8.9v5.6h5.7v8.9h-5.7v5.6h-8.9v-5.6h-5.7v-8.9Z" fill="currentColor"/>
+              <path d="M18 42.8c2.8-4.2 6.2-6.7 11.3-6.7 4.7 0 7.7 2.1 11.3 6.3" fill="none" stroke="rgba(255,255,255,0.88)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <div>
+            <strong>QuickCare</strong>
+            <small>Your Health, Our Priority</small>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="contact.html" class="btn btn-primary nav-cta">Book Appointment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="eyebrow">Trusted Care. Modern Medicine.</span>
+            <h1>Healthcare that feels personal, advanced, and reassuring.</h1>
+            <p>
+              We provide compassionate, evidence-based healthcare with dedicated specialists,
+              advanced diagnostics, and a patient-first approach for every stage of life.
+            </p>
+
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+              <a href="services.html" class="btn btn-secondary">Explore Services</a>
+            </div>
+
+            <div class="emergency-box">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div>
+                <span>Emergency Helpline</span>
+                <strong>+91 98765 43210</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="image-card">
+              <img src="images/modern-hospital-exterior.svg" alt="Modern hospital exterior with medical cross and ambulance" />
+              <div class="floating-badge badge-one">
+                <span class="badge-icon"><i class="fa-solid fa-shield-heart"></i></span>
+                <div>
+                  <strong>24/7 Care</strong>
+                  <small>Always available</small>
+                </div>
+              </div>
+              <div class="floating-badge badge-two">
+                <span class="badge-icon"><i class="fa-solid fa-user-doctor"></i></span>
+                <div>
+                  <strong>120+ Doctors</strong>
+                  <small>Expert specialists</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <div class="container stats-grid">
+          <article class="stat-card">
+            <span class="stat-value">120+</span>
+            <span class="stat-label">Expert Doctors</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">25+</span>
+            <span class="stat-label">Departments</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">18 yrs</span>
+            <span class="stat-label">Medical Excellence</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">2.5L+</span>
+            <span class="stat-label">Patients Cared</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Our Core Services</span>
+            <h2>Comprehensive care for every patient.</h2>
+          </div>
+
+          <div class="card-grid service-grid">
+            <article class="info-card service-card">
+              <div class="service-image">
+                <img src="images/ai-emergency.svg" alt="Emergency care illustration" />
+              </div>
+              <div class="service-body">
+                <div class="icon-wrap"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h3>Emergency Care</h3>
+                <p>Round-the-clock emergency response with rapid assessment and critical care support.</p>
+              </div>
+            </article>
+            <article class="info-card service-card">
+              <div class="service-image">
+                <img src="images/ai-cardiology.svg" alt="Cardiology care illustration" />
+              </div>
+              <div class="service-body">
+                <div class="icon-wrap"><i class="fa-solid fa-stethoscope"></i></div>
+                <h3>Cardiology</h3>
+                <p>Advanced heart diagnostics, preventive screenings, and specialist cardiac care.</p>
+              </div>
+            </article>
+            <article class="info-card service-card">
+              <div class="service-image">
+                <img src="images/ai-neurology.svg" alt="Neurology care illustration" />
+              </div>
+              <div class="service-body">
+                <div class="icon-wrap"><i class="fa-solid fa-brain"></i></div>
+                <h3>Neurology</h3>
+                <p>Detailed neurological evaluations and specialized treatment for brain and nerve disorders.</p>
+              </div>
+            </article>
+            <article class="info-card service-card">
+              <div class="service-image">
+                <img src="images/ai-ambulance.svg" alt="Ambulance service illustration" />
+              </div>
+              <div class="service-body">
+                <div class="icon-wrap"><i class="fa-solid fa-ambulance"></i></div>
+                <h3>Ambulance Service</h3>
+                <p>Fast patient transport with trained staff and emergency-ready medical equipment.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Medical Specialists</span>
+            <h2>Meet our experienced doctors.</h2>
+          </div>
+
+          <div class="card-grid doctor-grid">
+            <article class="doctor-card">
+              <img src="images/doctor1.jpg" alt="Dr. Aisha Mehta, Senior Cardiologist" />
+              <div class="doctor-content">
+                <h3>Dr. Aisha Mehta</h3>
+                <p class="role">Senior Cardiologist</p>
+                <p><strong>Qualification:</strong> MBBS, MD (Cardiology)</p>
+                <p><strong>Experience:</strong> 18+ years</p>
+                <a href="contact.html" class="btn btn-small btn-primary">Book Appointment</a>
+              </div>
+            </article>
+            <article class="doctor-card">
+              <img src="images/doctor2.jpg" alt="Dr. Rohan Verma, Neurologist" />
+              <div class="doctor-content">
+                <h3>Dr. Rohan Verma</h3>
+                <p class="role">Neurologist</p>
+                <p><strong>Qualification:</strong> MBBS, DM (Neurology)</p>
+                <p><strong>Experience:</strong> 16+ years</p>
+                <a href="contact.html" class="btn btn-small btn-primary">Book Appointment</a>
+              </div>
+            </article>
+            <article class="doctor-card">
+              <img src="images/doctor3.jpg" alt="Dr. Sneha Kapoor, Pediatrician" />
+              <div class="doctor-content">
+                <h3>Dr. Sneha Kapoor</h3>
+                <p class="role">Pediatric Specialist</p>
+                <p><strong>Qualification:</strong> MBBS, MD (Pediatrics)</p>
+                <p><strong>Experience:</strong> 14+ years</p>
+                <a href="contact.html" class="btn btn-small btn-primary">Book Appointment</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Hospital Departments</span>
+            <h2>Focused care across every specialty.</h2>
+          </div>
+
+          <div class="card-grid dept-grid">
+            <article class="dept-card dept-card-image">
+              <div class="dept-image-wrap">
+                <img src="images/cardiology.svg" alt="Cardiology department" />
+              </div>
+              <div class="dept-copy">
+                <h3>Cardiology</h3>
+                <p>Preventive heart screening and expert vascular care.</p>
+              </div>
+            </article>
+            <article class="dept-card dept-card-image">
+              <div class="dept-image-wrap">
+                <img src="images/neurology.svg" alt="Neurology department" />
+              </div>
+              <div class="dept-copy">
+                <h3>Neurology</h3>
+                <p>Brain, spinal, and nerve disorder management.</p>
+              </div>
+            </article>
+            <article class="dept-card dept-card-image">
+              <div class="dept-image-wrap">
+                <img src="images/orthopedics.svg" alt="Orthopedics department" />
+              </div>
+              <div class="dept-copy">
+                <h3>Orthopedics</h3>
+                <p>Joint and bone services with surgical and rehab support.</p>
+              </div>
+            </article>
+            <article class="dept-card dept-card-image">
+              <div class="dept-image-wrap">
+                <img src="images/pediatrics.svg" alt="Pediatrics department" />
+              </div>
+              <div class="dept-copy">
+                <h3>Pediatrics</h3>
+                <p>Complete child health care and family-centered treatment.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container features-layout">
+          <div class="feature-copy">
+            <span class="eyebrow">Why Patients Choose Us</span>
+            <h2>Exceptional care built around trust, safety, and comfort.</h2>
+            <ul class="check-list">
+              <li>Board-certified doctors and multidisciplinary specialists</li>
+              <li>Well-equipped ICU, diagnostics, and emergency response units</li>
+              <li>Digital records and transparent patient communication</li>
+              <li>Comfort-focused inpatient and rehabilitation services</li>
+            </ul>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-box">
+              <i class="fa-solid fa-user-doctor"></i>
+              <h3>Patient-Centered Approach</h3>
+            </article>
+            <article class="feature-box">
+              <i class="fa-solid fa-shield-heart"></i>
+              <h3>High Safety Standards</h3>
+            </article>
+            <article class="feature-box">
+              <i class="fa-solid fa-kit-medical"></i>
+              <h3>Modern Infrastructure</h3>
+            </article>
+            <article class="feature-box">
+              <i class="fa-solid fa-clock"></i>
+              <h3>24/7 Support</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-strip">
+        <div class="container cta-inner">
+          <div>
+            <span class="eyebrow light">Emergency Support</span>
+            <h2>Need immediate care? Our emergency team is available 24/7.</h2>
+          </div>
+          <a href="contact.html" class="btn btn-light">Contact Emergency Desk</a>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Frequently Asked Questions</span>
+            <h2>Helpful answers for new patients.</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item active">
+              <button class="faq-question" type="button">
+                Do you accept walk-in emergencies?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, emergency cases are prioritized and treated immediately regardless of appointment status.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                Can I book a consultation online?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, our appointment request form on the contact page allows patients to submit a request.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                Do you provide diagnostic tests?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>We offer laboratory, radiology, and diagnostic services through our dedicated care departments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">+</span>
+            <div>
+              <strong>QuickCare</strong>
+              <small>Your Health, Our Priority</small>
+            </div>
+          </a>
+          <p>Delivering modern, patient-first healthcare with compassion, expertise, and advanced medical support.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>24 Green Avenue, New City</li>
+            <li>+91 98765 43210</li>
+            <li>hello@quickcarehospital.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> QuickCare Hospital. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
